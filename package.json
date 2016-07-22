@@ -1,0 +1,10 @@
+{
+  "name": "hacker-hello-world-sass",
+  "description": "Testing sass.",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "npm run watch-css",
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  }
+}
